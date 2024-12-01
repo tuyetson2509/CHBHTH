@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "HUT SHOP";
+
+    Layout = "~/Views/Shared/_LayoutClient2.cshtml";
+}
+@using CHBHTH.Models;
+
+
+<br />
+<header class="bg-body py-0">
+    <center>
+        <div class="row">
+            <div class="col-md-16">
+                <img src="~/Images/TRANG-CHU-1.jpg" width="95%" />
+            </div>
+        </div>
+    </center>
+</header>
+<br />
+<div class="spnoibat">
+    <center>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="~/Images/KHUYENMAI.jpg" class="img-responsive" alt="" width="80%" />
+            </div>
+            <div class="col-md-4">
+                <img src="~/Images/QUATANG.jpg" class="img-responsive" alt="" width="80%" />
+            </div>
+            <div class="col-md-4">
+                <img src="~/Images/THANHLY.jpg" class="img-responsive" alt="" width="80%" />
+            </div>
+        </div>
+    </center>
+</div> <br />
+
+    @Html.Action("suapartial", "sanpham")
+
+    @Html.Action("dauanpartial", "sanpham")
+
+<div>
+    <center>
+        <img class="img-responsive" src="~/Images/BANNER-XAKHO.jpg" width="80%" />
+    </center>
+</div> <br />
+
+    @Html.Action("raupartial", "sanpham")
+
+
